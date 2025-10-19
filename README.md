@@ -1,9 +1,7 @@
-<p align="center">
-<img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
-</p>
 
-<h1>osTicket - Prerequisites and Installation</h1>
-This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
+
+<h1>Network File Shares and Permissions</h1>
+This tutorial outlines how to give network files permissions and how to share them.<br />
 
 
 <h2>Video Demonstration</h2>
@@ -14,42 +12,51 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
-- Internet Information Services (IIS)
+- File Explorer 
 
 <h2>Operating Systems Used </h2>
 
 - Windows 10</b> (21H2)
 
-<h2>List of Prerequisites</h2>
+<h2>List of Steps</h2>
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+- Create folder
+- Set Permissions (Share the folder)
+- Attempt to access file sharing 
 
-<h2>Installation Steps</h2>
+
+<h2> Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="981" height="500" alt="image" src="https://github.com/user-attachments/assets/510b0140-d096-44be-82a3-54f64ee0f163" />
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Connect into virtual machine and create three folders. Name the folder “read-access”, “write-access”, “no-access”.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1192" height="587" alt="image" src="https://github.com/user-attachments/assets/3b4ac28c-6af0-41d1-af68-5c10b335f87b" />
+<img width="1220" height="592" alt="image" src="https://github.com/user-attachments/assets/87096da4-84f9-4470-ae2a-54b13643fb04" />
+<img width="1190" height="587" alt="image" src="https://github.com/user-attachments/assets/4f6663ac-edf0-429b-9694-5fd52ed15a61" />
+
+
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<h2>Set the following permissions (share the folder)</h2>
+
+- Folder: “read-access”, Group: “Domain Users”, Permission: “Read”
+- Folder: “write-access”,  Group: “Domain Users”, Permissions: “Read/Write”
+- Folder: “no-access”, Group: “Domain Admins”, “Permissions: “Read/Write”
+</p>
+<br />
+
+<p>
+
+</p>
+<p>
+Connect to a different virtual machine and attempt to access file shares as a normal user. Try to access the folders you just created. Which folders can you access? Which folders can you create stuff in?
 </p>
 <br />
